@@ -305,3 +305,4 @@ Certainly! Here's how I would answer these questions:
     - **Answer:** Collaborated on migrating a monolithic application to microservices architecture using AWS ECS. Conducted regular stand-ups for progress updates, utilized project management tools like JIRA for task tracking, and organized workshops for knowledge sharing. Communicated project milestones and challenges transparently to ensure alignment and coordination among team members.
 
 These scenario-based questions and answers cover a wide range of topics related to AWS services, networking, security, automation, troubleshooting, advanced topics, and soft skills. Prepare with these responses to demonstrate your practical experience and proficiency in AWS during interviews.
+
