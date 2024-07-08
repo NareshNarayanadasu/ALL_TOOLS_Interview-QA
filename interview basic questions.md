@@ -1,5 +1,18 @@
 
 
+**intro**
+---
+
+"Hello, I'm Naresh Narayanadasu. With over 3 years in IT, I specialize in DevOps, focusing on cloud computing with Azure and AWS. My expertise includes automating deployments using AWS services like Lambda, S3, EC2, and Azure equivalents. I streamline operations with Shell Scripts in Linux/Unix environments and manage infrastructure efficiently using AWS CloudFormation and Terraform.
+
+I've led Jenkins pipelines for automated builds and deployments, integrated Docker and Kubernetes for containerized applications, and used Ansible for configuration management. At Aja Consulting Services LLP, I've overseen projects optimizing CI/CD pipelines, reducing deployment times by 40%, and integrating monitoring solutions with Azure Monitor.
+
+My background includes a B. Tech in Electrical Electronics Engineering and a commitment to adopting new technologies like Azure DevOps for continuous improvement. I bring strong skills in scripting, containerization, and infrastructure management across diverse operating systems.
+
+Thank you for considering my experience and skills."
+
+---
+
 **Interviewer:** Can you describe your daily roles and responsibilities as a DevOps engineer?
 
 **You:**
