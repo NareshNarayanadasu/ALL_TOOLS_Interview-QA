@@ -1,43 +1,44 @@
-Compare Nginx, Apache, and Tomcat in terms of their use cases.
-How do you optimize Nginx/Apache configurations for performance?
-Describe a scenario where you would use Nginx as a reverse proxy.
-How do you troubleshoot performance issues in Tomcat applications?
-Explain how to configure SSL/TLS certificates in Apache/Nginx.
-Explain how Nginx handles load balancing and reverse proxying.
-How do you configure virtual hosts in Apache?
-Describe your experience tuning Tomcat for performance.
-What are HTTP/2 and HTTP/3, and how do they impact server configurations?
-How do you handle SSL termination in Nginx/Apache configurations?
-How do you configure SSL certificates with Let's Encrypt in Nginx/Apache?
-Describe your experience with using Nginx as a load balancer.
-How would you troubleshoot performance issues in Apache/Tomcat?
-What are the advantages of using reverse proxies like Nginx in front of application servers?
-How do you handle log rotation and management in Nginx/Apache?
-How do you configure reverse proxy caching in Nginx for improving application performance?
-Describe your approach to logging and log analysis in Apache/Tomcat environments.
-How would you handle a sudden increase in traffic to your web application served by Nginx/Apache?
-Explain the role of connection pooling in application server performance optimization.
-How do you integrate application servers like Tomcat with monitoring tools like Prometheus?
-How do you configure load balancing algorithms in Nginx for optimizing traffic distribution?
-Describe your approach to handling session persistence and affinity in load-balanced environments with Apache/Tomcat.
-How do you automate the deployment and configuration of SSL certificates in Nginx/Apache?
-Explain how you would perform zero-downtime upgrades of application servers like Tomcat during peak traffic periods.
-How do you optimize application server configurations for handling large volumes of concurrent requests?
-How do you optimize Apache web server configurations for handling concurrent connections?
-Describe your approach to implementing HTTP/2 and QUIC protocols in Nginx for performance improvements.
-How would you implement load balancing strategies across multiple Tomcat instances?
-Explain the role of mod_rewrite in Apache and provide examples of its practical use cases.
-How do you handle caching mechanisms in Nginx/Apache for improving application response times?
-How do you configure Nginx as a WebSocket proxy for real-time applications?
-Describe your approach to optimizing Apache HTTP server configurations for high traffic websites.
-How would you implement rolling restarts and zero-downtime deployments with Tomcat?
-Explain the benefits of using reverse proxies like Nginx or Apache in front of application servers.
-How do you handle log aggregation and analysis across multiple Nginx/Apache instances?
-How do you configure Nginx or Apache for SSL termination and HTTPS redirection?
-Describe your approach to implementing caching strategies in Nginx/Apache for optimizing web application performance.
-How would you handle load balancing and session persistence across multiple Tomcat instances?
-Explain the advantages of using Apache Tomcat clustering for high availability and fault tolerance.
-How do you optimize JVM settings and garbage collection parameters for Tomcat applications?
+1. Compare Nginx, Apache, and Tomcat in terms of their use cases.
+2. How do you optimize Nginx/Apache configurations for performance?
+3. Describe a scenario where you would use Nginx as a reverse proxy.
+4. How do you troubleshoot performance issues in Tomcat applications?
+5. Explain how to configure SSL/TLS certificates in Apache/Nginx.
+6. Explain how Nginx handles load balancing and reverse proxying.
+7. How do you configure virtual hosts in Apache?
+8. Describe your experience tuning Tomcat for performance.
+9. What are HTTP/2 and HTTP/3, and how do they impact server configurations?
+10. How do you handle SSL termination in Nginx/Apache configurations?
+11. How do you configure SSL certificates with Let's Encrypt in Nginx/Apache?
+12. Describe your experience with using Nginx as a load balancer.
+13. How would you troubleshoot performance issues in Apache/Tomcat?
+14. What are the advantages of using reverse proxies like Nginx in front of application servers?
+15. How do you handle log rotation and management in Nginx/Apache?
+16. How do you configure reverse proxy caching in Nginx for improving application performance?
+17. Describe your approach to logging and log analysis in Apache/Tomcat environments.
+18. How would you handle a sudden increase in traffic to your web application served by Nginx/Apache?
+19. Explain the role of connection pooling in application server performance optimization.
+20. How do you integrate application servers like Tomcat with monitoring tools like Prometheus?
+21. How do you configure load balancing algorithms in Nginx for optimizing traffic distribution?
+22. Describe your approach to handling session persistence and affinity in load-balanced environments with Apache/Tomcat.
+23. How do you automate the deployment and configuration of SSL certificates in Nginx/Apache?
+24. Explain how you would perform zero-downtime upgrades of application servers like Tomcat during peak traffic periods.
+25. How do you optimize application server configurations for handling large volumes of concurrent requests?
+26. How do you optimize Apache web server configurations for handling concurrent connections?
+27. Describe your approach to implementing HTTP/2 and QUIC protocols in Nginx for performance improvements.
+28. How would you implement load balancing strategies across multiple Tomcat instances?
+29. Explain the role of mod_rewrite in Apache and provide examples of its practical use cases.
+30. How do you handle caching mechanisms in Nginx/Apache for improving application response times?
+31. How do you configure Nginx as a WebSocket proxy for real-time applications?
+32. Describe your approach to optimizing Apache HTTP server configurations for high traffic websites.
+33. How would you implement rolling restarts and zero-downtime deployments with Tomcat?
+34. Explain the benefits of using reverse proxies like Nginx or Apache in front of application servers.
+35. How do you handle log aggregation and analysis across multiple Nginx/Apache instances?
+36. How do you configure Nginx or Apache for SSL termination and HTTPS redirection?
+37. Describe your approach to implementing caching strategies in Nginx/Apache for optimizing web application performance.
+38. How would you handle load balancing and session persistence across multiple Tomcat instances?
+39. Explain the advantages of using Apache Tomcat clustering for high availability and fault tolerance.
+40. How do you optimize JVM settings and garbage collection parameters for Tomcat applications?
+
 
 
 

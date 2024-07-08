@@ -1,43 +1,44 @@
-Explain the Docker container lifecycle.
-How do you manage Docker images and containers in production?
-What is Kubernetes, and how does it differ from Docker Swarm?
-Describe how Kubernetes achieves high availability and scalability.
-How would you monitor Docker or Kubernetes clusters?
-How would you secure Docker containers in a production environment?
-Describe your experience with Docker Compose and its use cases.
-What are Kubernetes namespaces, and how do you use them?
-How do you handle persistent storage in Kubernetes pods?
-Explain the concept of Kubernetes Operators and their benefits.
-How do you handle rolling updates and rollbacks in Kubernetes deployments?
-Describe your experience with Kubernetes network policies and their importance.
-How would you monitor Docker container health and performance metrics?
-Explain the difference between Docker Swarm and Kubernetes orchestration.
-How do you manage secrets and sensitive data in Kubernetes?
-How would you secure communication between microservices in Kubernetes clusters?
-Describe your experience with Kubernetes operators and custom resources.
-How do you monitor resource utilization and performance metrics in Docker containers?
-What are Kubernetes StatefulSets, and when would you use them?
-How do you handle rolling updates with zero downtime in Kubernetes?
-Explain the concept of container orchestration and its importance in modern cloud-native applications.
-How do you implement automated scaling of Kubernetes pods based on metrics like CPU utilization?
-Describe your approach to managing Kubernetes configurations across different environments (e.g., development, staging, production).
-How would you monitor and troubleshoot networking issues between Docker containers or Kubernetes pods?
-What are Kubernetes custom resources and controllers, and how do you extend Kubernetes functionality using them?
-How do you handle container image security vulnerabilities in Docker registries?
-Describe your experience with using Kubernetes Operators for managing stateful applications.
-How would you configure Kubernetes Ingress controllers and manage traffic routing?
-Explain the benefits of using Helm charts in Kubernetes deployments.
-How do you perform canary deployments and A/B testing in Kubernetes clusters?
-How would you implement multi-container applications using Docker Compose?
-Describe your approach to managing secrets and sensitive data in Kubernetes deployments.
-How do you handle container lifecycle events and hooks in Docker and Kubernetes?
-Explain the concept of Kubernetes Custom Resource Definitions (CRDs) and operators.
-How would you implement Kubernetes Pod affinity and anti-affinity rules?
-How do you implement container networking and service discovery in Kubernetes clusters?
-Describe your experience with using Docker Swarm for container orchestration compared to Kubernetes.
-How would you optimize Docker image builds and minimize image size for efficient deployments?
-Explain the concept of Kubernetes pod security policies and how you implement them.
-How do you handle rolling updates and versioning of Docker images in production Kubernetes environments?
+1. Explain the Docker container lifecycle.
+2. How do you manage Docker images and containers in production?
+3. What is Kubernetes, and how does it differ from Docker Swarm?
+4. Describe how Kubernetes achieves high availability and scalability.
+5. How would you monitor Docker or Kubernetes clusters?
+6. How would you secure Docker containers in a production environment?
+7. Describe your experience with Docker Compose and its use cases.
+8. What are Kubernetes namespaces, and how do you use them?
+9. How do you handle persistent storage in Kubernetes pods?
+10. Explain the concept of Kubernetes Operators and their benefits.
+11. How do you handle rolling updates and rollbacks in Kubernetes deployments?
+12. Describe your experience with Kubernetes network policies and their importance.
+13. How would you monitor Docker container health and performance metrics?
+14. Explain the difference between Docker Swarm and Kubernetes orchestration.
+15. How do you manage secrets and sensitive data in Kubernetes?
+16. How would you secure communication between microservices in Kubernetes clusters?
+17. Describe your experience with Kubernetes operators and custom resources.
+18. How do you monitor resource utilization and performance metrics in Docker containers?
+19. What are Kubernetes StatefulSets, and when would you use them?
+20. How do you handle rolling updates with zero downtime in Kubernetes?
+21. Explain the concept of container orchestration and its importance in modern cloud-native applications.
+22. How do you implement automated scaling of Kubernetes pods based on metrics like CPU utilization?
+23. Describe your approach to managing Kubernetes configurations across different environments (e.g., development, staging, production).
+24. How would you monitor and troubleshoot networking issues between Docker containers or Kubernetes pods?
+25. What are Kubernetes custom resources and controllers, and how do you extend Kubernetes functionality using them?
+26. How do you handle container image security vulnerabilities in Docker registries?
+27. Describe your experience with using Kubernetes Operators for managing stateful applications.
+28. How would you configure Kubernetes Ingress controllers and manage traffic routing?
+29. Explain the benefits of using Helm charts in Kubernetes deployments.
+30. How do you perform canary deployments and A/B testing in Kubernetes clusters?
+31. How would you implement multi-container applications using Docker Compose?
+32. Describe your approach to managing secrets and sensitive data in Kubernetes deployments.
+33. How do you handle container lifecycle events and hooks in Docker and Kubernetes?
+34. Explain the concept of Kubernetes Custom Resource Definitions (CRDs) and operators.
+35. How would you implement Kubernetes Pod affinity and anti-affinity rules?
+36. How do you implement container networking and service discovery in Kubernetes clusters?
+37. Describe your experience with using Docker Swarm for container orchestration compared to Kubernetes.
+38. How would you optimize Docker image builds and minimize image size for efficient deployments?
+39. Explain the concept of Kubernetes pod security policies and how you implement them.
+40. How do you handle rolling updates and versioning of Docker images in production Kubernetes environments?
+
 
 
 Let's address each question one by one:

@@ -1,43 +1,44 @@
-Compare Linux and Windows in terms of security features.
-How do you monitor system performance in Linux/Windows environments?
-Describe the steps to harden a Linux server for production use.
-What are Active Directory and its role in Windows environments?
-How do you automate tasks using PowerShell in Windows?
-How do you automate server provisioning in Linux/Windows environments?
-Describe your experience with Linux shell scripting for system automation.
-What are Group Policies in Windows, and how do they manage system configurations?
-How do you handle patch management in Linux/Windows servers?
-Explain the role of systemd in Linux and its advantages over traditional init systems.
-How do you automate software updates and patch management in Linux/Windows servers?
-Describe your experience with configuring Linux firewalls (e.g., iptables) and Windows Firewall.
-How do you handle disk management and performance tuning in Linux/Windows servers?
-Explain the concept of process management in Linux and Windows.
-How would you implement monitoring and alerting for critical services in Linux/Windows environments?
-How do you automate backup and recovery processes in Linux/Windows servers?
-Describe your experience with configuring high availability solutions in Linux/Windows environments.
-How would you handle kernel tuning and optimization in Linux for specific workloads?
-What are Windows Services, and how do you manage them effectively?
-How do you implement centralized logging and monitoring across Linux/Windows server fleets?
-How do you implement role-based access control (RBAC) and privilege escalation management in Linux/Windows environments?
-Describe your approach to configuring high availability solutions for critical services in Linux/Windows server clusters.
-How do you perform capacity planning and resource allocation for virtualized Linux/Windows servers?
-Explain the concept of kernel-level and user-level threads in operating system scheduling.
-How would you automate routine administrative tasks using PowerShell scripts in Windows Server environments?
-How do you implement role-based access control (RBAC) and audit logging in Linux/Windows environments?
-Describe your approach to automating server hardening tasks using configuration management tools like Ansible.
-How would you implement automated backup and disaster recovery solutions in Linux/Windows servers?
-Explain the concept of process scheduling algorithms in operating systems and their impact on system performance.
-How do you handle kernel tuning and optimization for specific workloads in Linux/Windows server environments?
-How do you implement centralized logging using tools like ELK Stack (Elasticsearch, Logstash, Kibana) in Linux/Windows environments?
-Describe your approach to configuring active-active and active-passive high availability clusters in Linux/Windows.
-How do you handle system resource monitoring and performance tuning in Linux/Windows server environments?
-Explain the role of systemd unit files in managing services and tasks in Linux.
-How would you automate patch management and software updates across a fleet of Linux/Windows servers?
-How do you implement automated patch management and software updates in Linux/Windows server environments?
-Describe your approach to configuring and monitoring Linux/Windows firewall rules and security policies.
-How would you handle disk management and storage optimization in virtualized Linux/Windows environments?
-Explain the concept of process scheduling algorithms in operating systems and their impact on system performance.
-How do you automate routine administrative tasks using PowerShell scripts in Windows Server environments?
+1. Compare Linux and Windows in terms of security features.
+2. How do you monitor system performance in Linux/Windows environments?
+3. Describe the steps to harden a Linux server for production use.
+4. What are Active Directory and its role in Windows environments?
+5. How do you automate tasks using PowerShell in Windows?
+6. How do you automate server provisioning in Linux/Windows environments?
+7. Describe your experience with Linux shell scripting for system automation.
+8. What are Group Policies in Windows, and how do they manage system configurations?
+9. How do you handle patch management in Linux/Windows servers?
+10. Explain the role of systemd in Linux and its advantages over traditional init systems.
+11. How do you automate software updates and patch management in Linux/Windows servers?
+12. Describe your experience with configuring Linux firewalls (e.g., iptables) and Windows Firewall.
+13. How do you handle disk management and performance tuning in Linux/Windows servers?
+14. Explain the concept of process management in Linux and Windows.
+15. How would you implement monitoring and alerting for critical services in Linux/Windows environments?
+16. How do you automate backup and recovery processes in Linux/Windows servers?
+17. Describe your experience with configuring high availability solutions in Linux/Windows environments.
+18. How would you handle kernel tuning and optimization in Linux for specific workloads?
+19. What are Windows Services, and how do you manage them effectively?
+20. How do you implement centralized logging and monitoring across Linux/Windows server fleets?
+21. How do you implement role-based access control (RBAC) and privilege escalation management in Linux/Windows environments?
+22. Describe your approach to configuring high availability solutions for critical services in Linux/Windows server clusters.
+23. How do you perform capacity planning and resource allocation for virtualized Linux/Windows servers?
+24. Explain the concept of kernel-level and user-level threads in operating system scheduling.
+25. How would you automate routine administrative tasks using PowerShell scripts in Windows Server environments?
+26. How do you implement role-based access control (RBAC) and audit logging in Linux/Windows environments?
+27. Describe your approach to automating server hardening tasks using configuration management tools like Ansible.
+28. How would you implement automated backup and disaster recovery solutions in Linux/Windows servers?
+29. Explain the concept of process scheduling algorithms in operating systems and their impact on system performance.
+30. How do you handle kernel tuning and optimization for specific workloads in Linux/Windows server environments?
+31. How do you implement centralized logging using tools like ELK Stack (Elasticsearch, Logstash, Kibana) in Linux/Windows environments?
+32. Describe your approach to configuring active-active and active-passive high availability clusters in Linux/Windows.
+33. How do you handle system resource monitoring and performance tuning in Linux/Windows server environments?
+34. Explain the role of systemd unit files in managing services and tasks in Linux.
+35. How would you automate patch management and software updates across a fleet of Linux/Windows servers?
+36. How do you implement automated patch management and software updates in Linux/Windows server environments?
+37. Describe your approach to configuring and monitoring Linux/Windows firewall rules and security policies.
+38. How would you handle disk management and storage optimization in virtualized Linux/Windows environments?
+39. Explain the concept of process scheduling algorithms in operating systems and their impact on system performance.
+40. How do you automate routine administrative tasks using PowerShell scripts in Windows Server environments?
+
 
 
 

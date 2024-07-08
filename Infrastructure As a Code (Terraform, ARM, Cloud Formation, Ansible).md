@@ -1,43 +1,43 @@
-Compare Terraform, ARM, CloudFormation, and Ansible in terms of their use cases.
-How do you manage secrets and sensitive data in Terraform templates?
-Describe the components of a Terraform module.
-Explain the concept of idempotency in Ansible playbooks.
-How do you handle infrastructure drift in IaC tools?
-How do you manage state files in Terraform and why is it important?
-Describe a scenario where you've used Ansible roles effectively.
-What are Azure Resource Manager templates (ARM templates), and how do they differ from Terraform?
-How would you implement rolling updates in Terraform or CloudFormation?
-How do you manage secrets and credentials securely in IaC tools?
-How would you manage dependencies between resources in Terraform?
-Describe a scenario where you've used Ansible playbooks for configuration management.
-What are Azure Resource Manager (ARM) templates' benefits over traditional deployment methods?
-How do you handle infrastructure drift and enforce configuration consistency in Ansible?
-How would you implement automated testing for IaC templates?
-How do you handle state management and locking in Terraform across a team?
-Describe your experience with using Ansible for configuration drift detection and remediation.
-What are the advantages of using Terraform modules, and how do you structure them?
-How do you implement blue-green deployments using Terraform or ARM templates?
-How would you manage secrets and sensitive data in Ansible playbooks?
-How do you handle cross-region deployments and resource dependencies in Terraform or ARM templates?
-Describe your experience with using Ansible for configuration management of heterogeneous server fleets.
-What are the benefits of using Infrastructure as Code (IaC) tools over manual provisioning methods?
-How would you implement versioning and rollback strategies for changes made using Terraform or CloudFormation?
-How do you ensure consistency and repeatability in deployments across different environments using Ansible playbooks?
-How do you manage dynamic inventory and resource dependencies in Ansible playbooks?
-Describe your approach to implementing immutable infrastructure using Terraform or ARM templates.
-How would you handle configuration drift detection and remediation in Terraform deployments?
-Explain the advantages of using Terraform workspaces and how you would use them in a multi-environment setup.
-How do you implement version control and change management for IaC codebases?
-How do you manage multi-cloud deployments using Terraform, ARM templates, or CloudFormation?
-Describe your approach to implementing blue-green deployments with Terraform or ARM templates.
-How would you handle resource tagging and cost allocation in Terraform or CloudFormation?
-Explain the benefits of using Ansible dynamic inventories and when you would use them.
-How do you manage secrets rotation and key management in Ansible playbooks?
-How do you manage secrets and sensitive data securely in Terraform state files or Ansible playbooks?
-Describe your approach to implementing infrastructure drift detection and automated remediation using Terraform or ARM templates.
-How would you handle blue-green deployments and rollback strategies using Infrastructure as Code (IaC)?
-Explain the benefits of using Terraform remote state and backends for collaborative infrastructure management.
-How do you implement automated testing and validation of IaC templates for reliability and consistency?
+1. Compare Terraform, ARM, CloudFormation, and Ansible in terms of their use cases.
+2. How do you manage secrets and sensitive data in Terraform templates?
+3. Describe the components of a Terraform module.
+4. Explain the concept of idempotency in Ansible playbooks.
+5. How do you handle infrastructure drift in IaC tools?
+6. How do you manage state files in Terraform and why is it important?
+7. Describe a scenario where you've used Ansible roles effectively.
+8. What are Azure Resource Manager templates (ARM templates), and how do they differ from Terraform?
+9. How would you implement rolling updates in Terraform or CloudFormation?
+10. How do you manage secrets and credentials securely in IaC tools?
+11. How would you manage dependencies between resources in Terraform?
+12. Describe a scenario where you've used Ansible playbooks for configuration management.
+13. What are Azure Resource Manager (ARM) templates' benefits over traditional deployment methods?
+14. How do you handle infrastructure drift and enforce configuration consistency in Ansible?
+15. How would you implement automated testing for IaC templates?
+16. How do you handle state management and locking in Terraform across a team?
+17. Describe your experience with using Ansible for configuration drift detection and remediation.
+18. What are the advantages of using Terraform modules, and how do you structure them?
+19. How do you implement blue-green deployments using Terraform or ARM templates?
+20. How would you manage secrets and sensitive data in Ansible playbooks?
+21. How do you handle cross-region deployments and resource dependencies in Terraform or ARM templates?
+22. Describe your experience with using Ansible for configuration management of heterogeneous server fleets.
+23. What are the benefits of using Infrastructure as Code (IaC) tools over manual provisioning methods?
+24. How would you implement versioning and rollback strategies for changes made using Terraform or CloudFormation?
+25. How do you ensure consistency and repeatability in deployments across different environments using Ansible playbooks?
+26. How do you manage dynamic inventory and resource dependencies in Ansible playbooks?
+27. Describe your approach to implementing immutable infrastructure using Terraform or ARM templates.
+28. How would you handle configuration drift detection and remediation in Terraform deployments?
+29. Explain the advantages of using Terraform workspaces and how you would use them in a multi-environment setup.
+30. How do you implement version control and change management for IaC codebases?
+31. How do you manage multi-cloud deployments using Terraform, ARM templates, or CloudFormation?
+32. Describe your approach to implementing blue-green deployments with Terraform or ARM templates.
+33. How would you handle resource tagging and cost allocation in Terraform or CloudFormation?
+34. Explain the benefits of using Ansible dynamic inventories and when you would use them.
+35. How do you manage secrets rotation and key management in Ansible playbooks?
+36. How do you manage secrets and sensitive data securely in Terraform state files or Ansible playbooks?
+37. Describe your approach to implementing infrastructure drift detection and automated remediation using Terraform or ARM templates.
+38. How would you handle blue-green deployments and rollback strategies using Infrastructure as Code (IaC)?
+39. Explain the benefits of using Terraform remote state and backends for collaborative infrastructure management.
+40. How do you implement automated testing and validation of IaC templates for reliability and consistency?
 
 
 

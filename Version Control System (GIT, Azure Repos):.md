@@ -1,43 +1,44 @@
-Explain the difference between Git's centralized and distributed version control systems.
-How do you handle merge conflicts in Git?
-What is rebasing in Git, and when would you use it?
-Describe a branching strategy you have used in Git for a large project.
-How do you ensure Git repository security and access control?
-How do you handle large binary files in Git repositories?
-Explain the difference between Git rebase and Git merge.
-How do you ensure code quality and review processes in Git workflows?
-Describe your approach to branching and release management in Git.
-What are Git hooks, and how would you use them in a development workflow?
-How do you manage Git repositories in a team with geographically distributed members?
-Describe your experience with Git workflows like GitFlow or GitHub Flow.
-How do you ensure Git commit messages are informative and follow best practices?
-Explain the role of Git tags and how they are used in versioning.
-How would you integrate Git with issue tracking systems like JIRA or Azure Boards?
-How would you handle a situation where a feature branch needs to be merged into multiple release branches simultaneously?
-Describe your experience with Git submodules and their use cases.
-How do you ensure code review processes are efficient and effective in Git workflows?
-Explain the concept of Git rebase interactive and when it might be used.
-How do you handle conflicts between different teams working on the same repository in Git?
-How do you ensure code quality in Git repositories using automated tools and metrics?
-Describe your approach to implementing branching strategies for feature development and hotfixes in Git.
-How do you manage Git hooks for enforcing pre-commit checks and automation tasks?
-Explain the benefits of using Git tags versus branch names for release management.
-How would you handle a situation where a critical bug is discovered in a release branch while other features are being developed in the main branch?
-How do you handle repository branching and merging strategies for large-scale projects in Git?
-Describe your approach to managing Git conflicts and resolving merge issues effectively.
-How would you implement Git hooks for enforcing coding standards and pre-commit checks?
-Explain the benefits of GitLab CI/CD pipelines compared to Jenkins or Azure DevOps pipelines.
-How do you ensure Git repository integrity and prevent accidental deletion or corruption?
-How do you handle large-scale refactoring and code restructuring in Git repositories?
-Describe your approach to implementing Git workflows for feature flagging and experimentation.
-How would you integrate Git with third-party tools for code review, such as Gerrit or Crucible?
-Explain the benefits of Git submodule vs. Git subtree and when to use each.
-How do you ensure Git repository hygiene, such as managing obsolete branches and tags?
-How do you manage Git repository permissions and access controls for teams with different levels of privileges?
-Describe your approach to automating Git workflows using GitLab CI/CD or GitHub Actions.
-How would you ensure Git repository integrity and prevent unauthorized modifications or deletions?
-Explain the benefits of Git hooks over scheduled tasks for automating pre-commit checks and tasks.
-How do you handle Git submodule updates and synchronization across multiple repositories?
+1. Explain the difference between Git's centralized and distributed version control systems.
+2. How do you handle merge conflicts in Git?
+3. What is rebasing in Git, and when would you use it?
+4. Describe a branching strategy you have used in Git for a large project.
+5. How do you ensure Git repository security and access control?
+6. How do you handle large binary files in Git repositories?
+7. Explain the difference between Git rebase and Git merge.
+8. How do you ensure code quality and review processes in Git workflows?
+9. Describe your approach to branching and release management in Git.
+10. What are Git hooks, and how would you use them in a development workflow?
+11. How do you manage Git repositories in a team with geographically distributed members?
+12. Describe your experience with Git workflows like GitFlow or GitHub Flow.
+13. How do you ensure Git commit messages are informative and follow best practices?
+14. Explain the role of Git tags and how they are used in versioning.
+15. How would you integrate Git with issue tracking systems like JIRA or Azure Boards?
+16. How would you handle a situation where a feature branch needs to be merged into multiple release branches simultaneously?
+17. Describe your experience with Git submodules and their use cases.
+18. How do you ensure code review processes are efficient and effective in Git workflows?
+19. Explain the concept of Git rebase interactive and when it might be used.
+20. How do you handle conflicts between different teams working on the same repository in Git?
+21. How do you ensure code quality in Git repositories using automated tools and metrics?
+22. Describe your approach to implementing branching strategies for feature development and hotfixes in Git.
+23. How do you manage Git hooks for enforcing pre-commit checks and automation tasks?
+24. Explain the benefits of using Git tags versus branch names for release management.
+25. How would you handle a situation where a critical bug is discovered in a release branch while other features are being developed in the main branch?
+26. How do you handle repository branching and merging strategies for large-scale projects in Git?
+27. Describe your approach to managing Git conflicts and resolving merge issues effectively.
+28. How would you implement Git hooks for enforcing coding standards and pre-commit checks?
+29. Explain the benefits of GitLab CI/CD pipelines compared to Jenkins or Azure DevOps pipelines.
+30. How do you ensure Git repository integrity and prevent accidental deletion or corruption?
+31. How do you handle large-scale refactoring and code restructuring in Git repositories?
+32. Describe your approach to implementing Git workflows for feature flagging and experimentation.
+33. How would you integrate Git with third-party tools for code review, such as Gerrit or Crucible?
+34. Explain the benefits of Git submodule vs. Git subtree and when to use each.
+35. How do you ensure Git repository hygiene, such as managing obsolete branches and tags?
+36. How do you manage Git repository permissions and access controls for teams with different levels of privileges?
+37. Describe your approach to automating Git workflows using GitLab CI/CD or GitHub Actions.
+38. How would you ensure Git repository integrity and prevent unauthorized modifications or deletions?
+39. Explain the benefits of Git hooks over scheduled tasks for automating pre-commit checks and tasks.
+40. How do you handle Git submodule updates and synchronization across multiple repositories?
+
 
 Let's break down each of your questions:
 

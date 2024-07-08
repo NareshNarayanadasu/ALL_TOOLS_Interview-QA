@@ -1,43 +1,44 @@
-Compare Azure DevOps and Jenkins as CI/CD tools.
-How do you ensure fast build times in a CI/CD pipeline?
-Describe your experience with setting up automated tests in CI pipelines.
-What are Jenkins pipelines, and how do they differ from traditional jobs?
-How would you integrate Azure DevOps/Jenkins with Git repositories?
-How do you handle versioning of artifacts in a CI/CD pipeline?
-Describe your experience with blue-green deployments in CI/CD pipelines.
-What are the key metrics you monitor in CI/CD pipelines, and how do you ensure performance?
-How would you implement automated security testing in Azure DevOps/Jenkins?
-How do you manage dependencies between different stages in a CI/CD pipeline?
-How do you implement blue-green deployments using Azure DevOps/Jenkins?
-Describe your experience with using Docker containers in CI/CD pipelines.
-How do you manage environment-specific configurations in CI/CD pipelines?
-What are the advantages of using Jenkins pipelines over freestyle projects?
-How would you implement automated rollback mechanisms in CI/CD pipelines?
-How do you ensure security in CI/CD pipelines, especially with sensitive data and credentials?
-Describe your approach to performance testing within CI/CD pipelines.
-How would you implement canary releases or A/B testing in Azure DevOps/Jenkins?
-What are build agents (or slaves), and how do they work in Jenkins?
-How do you implement automated deployment approvals and gates in CI/CD pipelines?
-How do you implement infrastructure provisioning as part of CI/CD pipelines using tools like Terraform?
-Describe your experience with integrating security scanning tools (e.g., SonarQube, OWASP ZAP) into CI/CD pipelines.
-How would you handle secrets and sensitive data securely in Azure DevOps/Jenkins pipelines?
-What are the best practices for managing and rotating credentials used in CI/CD pipelines?
-How do you ensure traceability and auditability of CI/CD pipeline executions for compliance purposes?
-How do you integrate security scanning tools (e.g., Snyk, Black Duck) into CI/CD pipelines?
-Describe your approach to implementing multi-stage Docker builds in CI pipelines.
-How would you handle rolling updates and blue-green deployments using Kubernetes in CI/CD pipelines?
-Explain the concept of Jenkins shared libraries and how you would use them to modularize pipeline scripts.
-How do you measure and optimize CI/CD pipeline performance metrics like build times and deployment frequency?
-How do you integrate performance testing tools (e.g., JMeter, Gatling) into Azure DevOps/Jenkins pipelines?
-Describe your approach to implementing canary deployments with feature flags in CI/CD pipelines.
-How would you ensure compliance with regulatory requirements (e.g., PCI DSS, SOC 2) in CI/CD pipelines?
-Explain the benefits of using Jenkins multibranch pipelines over traditional pipelines.
-How do you measure and optimize resource consumption in Jenkins agents?
-How do you integrate security scanning tools (e.g., Fortify, Veracode) into Azure DevOps/Jenkins pipelines?
-Describe your approach to implementing blue-green deployments and canary releases in CI/CD pipelines.
-How would you handle cross-platform builds and deployments using Jenkins pipelines?
-Explain the concept of Jenkins Pipeline as Code (Jenkinsfile) and its benefits over traditional freestyle projects.
-How do you optimize Jenkins agent utilization and scale Jenkins pipelines for concurrent builds?
+1. Compare Azure DevOps and Jenkins as CI/CD tools.
+2. How do you ensure fast build times in a CI/CD pipeline?
+3. Describe your experience with setting up automated tests in CI pipelines.
+4. What are Jenkins pipelines, and how do they differ from traditional jobs?
+5. How would you integrate Azure DevOps/Jenkins with Git repositories?
+6. How do you handle versioning of artifacts in a CI/CD pipeline?
+7. Describe your experience with blue-green deployments in CI/CD pipelines.
+8. What are the key metrics you monitor in CI/CD pipelines, and how do you ensure performance?
+9. How would you implement automated security testing in Azure DevOps/Jenkins?
+10. How do you manage dependencies between different stages in a CI/CD pipeline?
+11. How do you implement blue-green deployments using Azure DevOps/Jenkins?
+12. Describe your experience with using Docker containers in CI/CD pipelines.
+13. How do you manage environment-specific configurations in CI/CD pipelines?
+14. What are the advantages of using Jenkins pipelines over freestyle projects?
+15. How would you implement automated rollback mechanisms in CI/CD pipelines?
+16. How do you ensure security in CI/CD pipelines, especially with sensitive data and credentials?
+17. Describe your approach to performance testing within CI/CD pipelines.
+18. How would you implement canary releases or A/B testing in Azure DevOps/Jenkins?
+19. What are build agents (or slaves), and how do they work in Jenkins?
+20. How do you implement automated deployment approvals and gates in CI/CD pipelines?
+21. How do you implement infrastructure provisioning as part of CI/CD pipelines using tools like Terraform?
+22. Describe your experience with integrating security scanning tools (e.g., SonarQube, OWASP ZAP) into CI/CD pipelines.
+23. How would you handle secrets and sensitive data securely in Azure DevOps/Jenkins pipelines?
+24. What are the best practices for managing and rotating credentials used in CI/CD pipelines?
+25. How do you ensure traceability and auditability of CI/CD pipeline executions for compliance purposes?
+26. How do you integrate security scanning tools (e.g., Snyk, Black Duck) into CI/CD pipelines?
+27. Describe your approach to implementing multi-stage Docker builds in CI pipelines.
+28. How would you handle rolling updates and blue-green deployments using Kubernetes in CI/CD pipelines?
+29. Explain the concept of Jenkins shared libraries and how you would use them to modularize pipeline scripts.
+30. How do you measure and optimize CI/CD pipeline performance metrics like build times and deployment frequency?
+31. How do you integrate performance testing tools (e.g., JMeter, Gatling) into Azure DevOps/Jenkins pipelines?
+32. Describe your approach to implementing canary deployments with feature flags in CI/CD pipelines.
+33. How would you ensure compliance with regulatory requirements (e.g., PCI DSS, SOC 2) in CI/CD pipelines?
+34. Explain the benefits of using Jenkins multibranch pipelines over traditional pipelines.
+35. How do you measure and optimize resource consumption in Jenkins agents?
+36. How do you integrate security scanning tools (e.g., Fortify, Veracode) into Azure DevOps/Jenkins pipelines?
+37. Describe your approach to implementing blue-green deployments and canary releases in CI/CD pipelines.
+38. How would you handle cross-platform builds and deployments using Jenkins pipelines?
+39. Explain the concept of Jenkins Pipeline as Code (Jenkinsfile) and its benefits over traditional freestyle projects.
+40. How do you optimize Jenkins agent utilization and scale Jenkins pipelines for concurrent builds?
+
 
 
 

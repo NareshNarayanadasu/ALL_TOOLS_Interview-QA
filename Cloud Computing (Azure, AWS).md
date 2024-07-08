@@ -1,43 +1,44 @@
-Explain the difference between Azure and AWS in terms of their service offerings.
-How would you design a highly available architecture on AWS/Azure?
-What are the key differences between Azure Resource Manager (ARM) templates and AWS CloudFormation?
-Describe how you would optimize costs in AWS/Azure environments.
-How do you ensure security and compliance in a cloud environment?
-How does Azure Active Directory differ from AWS IAM?
-Explain the concept of serverless computing and its benefits in AWS/Azure.
-Describe your experience with migrating applications from on-premises to Azure/AWS.
-How would you implement disaster recovery strategies in Azure/AWS?
-What are Azure Reserved Instances and AWS Reserved Instances, and how do they work?
-How do you handle scalability and elasticity in cloud architectures?
-Explain the concept of VPC (Virtual Private Cloud) in AWS and Azure.
-Describe your experience with hybrid cloud deployments.
-How do you monitor and optimize costs in a cloud environment?
-What are the differences between Azure Functions and AWS Lambda?
-How do you implement fault tolerance and high availability in cloud architectures?
-Explain the concept of CDN (Content Delivery Network) and its benefits in Azure/AWS.
-Describe your experience with serverless computing patterns such as event-driven architectures.
-How would you design a multi-region deployment strategy in Azure/AWS?
-What are Azure Blob Storage and AWS S3, and how do they differ in terms of use cases?
-How do you handle compliance requirements (e.g., GDPR, HIPAA) in cloud environments?
-Describe your experience with using Azure Monitor or AWS CloudWatch for monitoring and alerting.
-How would you design a disaster recovery plan for a mission-critical application in Azure/AWS?
-What are Azure Logic Apps and AWS Step Functions, and how do they streamline workflow automation?
-Explain the concept of serverless containers and how they differ from traditional container orchestration.
-How do you implement cross-account access and resource sharing in AWS/Azure securely?
-Describe your experience with using AWS Lambda layers or Azure Functions extensions for code reuse.
-How would you implement data encryption at rest and in transit in Azure/AWS environments?
-Explain the concept of serverless databases (e.g., AWS DynamoDB, Azure Cosmos DB) and their benefits.
-How do you optimize network performance and latency in cloud architectures?
-How do you implement cross-region replication for data redundancy and disaster recovery in Azure/AWS?
-Describe your experience with implementing serverless APIs using Azure Functions or AWS API Gateway.
-How would you optimize data storage costs in Azure Blob Storage or AWS S3?
-Explain the difference between Azure App Service and AWS Elastic Beanstalk.
-How do you monitor and optimize network performance in Azure Virtual Networks or AWS VPCs?
-How do you implement identity and access management (IAM) best practices in Azure/AWS?
-Describe your experience with using Azure Kubernetes Service (AKS) or Amazon EKS for container orchestration.
-How would you handle data sovereignty and regulatory compliance requirements in a multi-region cloud deployment?
-Explain the concept of serverless computing patterns like durable functions in Azure or Step Functions in AWS.
-How do you optimize cost allocation and billing management in Azure/AWS for large-scale deployments?
+1. Explain the difference between Azure and AWS in terms of their service offerings.
+2. How would you design a highly available architecture on AWS/Azure?
+3. What are the key differences between Azure Resource Manager (ARM) templates and AWS CloudFormation?
+4. Describe how you would optimize costs in AWS/Azure environments.
+5. How do you ensure security and compliance in a cloud environment?
+6. How does Azure Active Directory differ from AWS IAM?
+7. Explain the concept of serverless computing and its benefits in AWS/Azure.
+8. Describe your experience with migrating applications from on-premises to Azure/AWS.
+9. How would you implement disaster recovery strategies in Azure/AWS?
+10. What are Azure Reserved Instances and AWS Reserved Instances, and how do they work?
+11. How do you handle scalability and elasticity in cloud architectures?
+12. Explain the concept of VPC (Virtual Private Cloud) in AWS and Azure.
+13. Describe your experience with hybrid cloud deployments.
+14. How do you monitor and optimize costs in a cloud environment?
+15. What are the differences between Azure Functions and AWS Lambda?
+16. How do you implement fault tolerance and high availability in cloud architectures?
+17. Explain the concept of CDN (Content Delivery Network) and its benefits in Azure/AWS.
+18. Describe your experience with serverless computing patterns such as event-driven architectures.
+19. How would you design a multi-region deployment strategy in Azure/AWS?
+20. What are Azure Blob Storage and AWS S3, and how do they differ in terms of use cases?
+21. How do you handle compliance requirements (e.g., GDPR, HIPAA) in cloud environments?
+22. Describe your experience with using Azure Monitor or AWS CloudWatch for monitoring and alerting.
+23. How would you design a disaster recovery plan for a mission-critical application in Azure/AWS?
+24. What are Azure Logic Apps and AWS Step Functions, and how do they streamline workflow automation?
+25. Explain the concept of serverless containers and how they differ from traditional container orchestration.
+26. How do you implement cross-account access and resource sharing in AWS/Azure securely?
+27. Describe your experience with using AWS Lambda layers or Azure Functions extensions for code reuse.
+28. How would you implement data encryption at rest and in transit in Azure/AWS environments?
+29. Explain the concept of serverless databases (e.g., AWS DynamoDB, Azure Cosmos DB) and their benefits.
+30. How do you optimize network performance and latency in cloud architectures?
+31. How do you implement cross-region replication for data redundancy and disaster recovery in Azure/AWS?
+32. Describe your experience with implementing serverless APIs using Azure Functions or AWS API Gateway.
+33. How would you optimize data storage costs in Azure Blob Storage or AWS S3?
+34. Explain the difference between Azure App Service and AWS Elastic Beanstalk.
+35. How do you monitor and optimize network performance in Azure Virtual Networks or AWS VPCs?
+36. How do you implement identity and access management (IAM) best practices in Azure/AWS?
+37. Describe your experience with using Azure Kubernetes Service (AKS) or Amazon EKS for container orchestration.
+38. How would you handle data sovereignty and regulatory compliance requirements in a multi-region cloud deployment?
+39. Explain the concept of serverless computing patterns like durable functions in Azure or Step Functions in AWS.
+40. How do you optimize cost allocation and billing management in Azure/AWS for large-scale deployments?
+
 
 
 
