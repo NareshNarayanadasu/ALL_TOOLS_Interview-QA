@@ -53,12 +53,12 @@ In this example, the Service will automatically connect to the pods created by t
 # Kubernetes – Pods
 ##           Pods – The Theory
 
-    In a Docker environment, the smallest unit you deal with is a container. In the Kubernetes world, you work with a pod, which consists of one or more containers. You cannot deploy a bare container in Kubernetes without it being deployed within a pod.
+In a Docker environment, the smallest unit you deal with is a container. In the Kubernetes world, you work with a pod, which consists of one or more containers. You cannot deploy a bare container in Kubernetes without it being deployed within a pod.
 
-    The pod provides several things to the containers running within it, including options on how the container should run, any storage resources, and a network namespace. The pod encapsulates these for the containers that run inside them.
+The pod provides several things to the containers running within it, including options on how the container should run, any storage resources, and a network namespace. The pod encapsulates these for the containers that run inside them.
 ### Single Container Pods
   
-    The simplest way to get your containers deployed in Kubernetes is the one container per pod approach.
+The simplest way to get your containers deployed in Kubernetes is the one container per pod approach.
 
 ### Multi-container Pods
 
