@@ -194,3 +194,118 @@ A Deployment in Kubernetes manages ReplicaSets and ensures the desired number of
 Deployments manage replica sets and replica sets manage pods and pods manage containers.
 
 ![Deployments](./images/deployament.png)
+
+
+### ReplicaSet 
+used for basic pod management and ensuring a specified number of pod replicas are running.
+
+### Deployment
+Deployment builds on ReplicaSet by adding features for declarative updates, rolling updates, and rollbacks, making it ideal for managing application lifecycles in production environments where reliability and zero-downtime updates are crucial.
+
+```yml
+apiVersion: apps/v1 # Version of the API to use
+kind: Deployment # Defines the kind of object, in this case, a Deployment
+metadata: # Information about the object we're deploying
+  name: nginx-deployment # Name of the Deployment
+  labels: # Labels assigned to the Deployment
+    app: nginx
+spec: # Specifications for our object
+  replicas: 2 # The number of pods that should always be running
+  selector: # Selector to identify which pods the ReplicaSet is responsible for
+    matchLabels:
+      app: nginx # Pods with this label will be managed by this Deployment
+  template: # Template for the pods that will be created
+    metadata:
+      labels: # Labels assigned to the pods created by this Deployment
+        app: nginx
+    spec:
+      containers:
+      - name: nginx-container # The name of the container within the pod
+        image: nginx # Docker image to be used for the container
+        ports:
+        - containerPort: 80 # Port on which the container will be exposed
+```
+To view the current state of your deployments in Kubernetes, you can use the `kubectl get deployments` command. This command lists all the deployments in the current namespace and provides basic information about each one, such as the number of replicas, available replicas, and the deployment's age.
+
+Here's how you can use the command:
+
+```bash
+kubectl get deployments
+```
+
+This will output something like:
+
+```
+NAME               READY   UP-TO-DATE   AVAILABLE   AGE
+nginx-deployment   2/2     2            2           10m
+```
+
+
+This output indicates that the `nginx-deployment` has 2 replicas that are up-to-date and available, and it has been running for 10 minutes.
+There are several columns listed here, but the gist of it is:
+
+- **DESIRED:** 2 replicas of the application were in our configuration.
+- **CURRENT:** 2 replicas are currently running.
+- **UP-TO-DATE:** 2 replicas that have been updated to get to the configuration we specified.
+- **AVAILABLE:** 2 replicas are available for use.
+
+If you want more detailed information about a specific deployment, you can use:
+
+```bash
+kubectl describe deployment <deployment-name>
+```
+
+For example:
+
+```bash
+kubectl describe deployment nginx-deployment
+```
+
+This will provide detailed information about the deployment, including its strategy, events, and status.
+
+### Deployments can take an existing set and perform a rolling update on them
+
+modify our deployment
+manifest file to increase the number of replicas and also change the version of nginx that is
+being deployed. The file below makes those changes
+
+YAML file for a Kubernetes Deployment with comments added for clarity:
+
+```yaml
+apiVersion: apps/v1 # Specifies the API version
+kind: Deployment # Defines the kind of object, in this case, a Deployment
+metadata: # Information about the object being deployed
+  name: nginx-deployment # Name of the deployment
+  labels: # Labels assigned to the deployment
+    app: nginx
+spec: # Specifications for the deployment
+  strategy:
+    type: RollingUpdate # Deployment strategy type
+    rollingUpdate: # Rolling update configuration
+      maxUnavailable: 1 # Maximum number of pods that can be unavailable during the update
+      maxSurge: 1 # Maximum number of pods that can be created above the desired number of pods
+  replicas: 6 # Number of pod replicas that should always be running
+  selector: # Selector to identify which pods the Deployment is responsible for
+    matchLabels:
+      app: nginx # Pods with this label will be managed by this Deployment
+  template: # Template for the pods that will be created
+    metadata:
+      labels: # Labels assigned to the pods created by this Deployment
+        app: nginx
+    spec:
+      containers:
+      - name: nginx-container # Name of the container within the pod
+        image: nginx:1.7.9 # Docker image to be used for the container
+        ports:
+        - containerPort: 80 # Port on which the container will be exposed
+```
+
+This Deployment configuration ensures that six replicas of the `nginx` container will always be running. The rolling update strategy is configured to make sure that at most one pod can be unavailable during the update process (`maxUnavailable: 1`), and at most one additional pod can be created above the desired number of pods (`maxSurge: 1`).
+
+
+
+### To check rollout status 
+
+```bash
+kubectl rollout status deployment [deployment name]
+```
