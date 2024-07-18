@@ -70,3 +70,127 @@ All containers in a pod share the same network namespace, meaning they share an 
 
 A pod is only healthy if all its containers are ready. If one container is unhealthy, the entire pod deployment will fail.
 
+## ways of deployments
+
+there are two ways to deploy objects in Kubernetes. The first way
+is through the command line and the second is through a manifest file.
+
+
+### deploying nginx pod (naked pod)
+
+```yaml
+apiVersion: v1 #version of the API to use
+kind: Pod #What kind of object we're deploying
+metadata: #information about our object we're deploying
+  name: nginx-pod
+spec: #specifications for our object
+  containers:
+  - name: nginx-container #the name of the container within the pod
+    image: nginx #which container image should be pulled
+    ports:
+    - containerPort: 80 #the port of the container within the pod
+
+```
+### To get pods 
+
+```bash 
+kubectl get pods
+```
+### To describe pod in detail 
+
+```bash
+kubectl describe pod pod_name
+
+```
+
+Deploying naked pods in production is discouraged due to their inherent unreliability. Naked pods, or pods without higher-level controllers managing them, are unsuitable for several reasons:
+
+### Main Reasons:
+1. **Lack of Reliability:**
+   - **No Guaranteed Uptime:** If a pod crashes, Kubernetes does not automatically restart it, leading to potential downtime.
+   - **Node Failures:** If the node fails, the pod fails too and isn't automatically rescheduled on a healthy node.
+   - **Resource Constraints:** Pods can be terminated if they run out of resources and won't restart automatically, disrupting services.
+   - **Manual Intervention Required:** Any failure requires manual intervention, which is not ideal for maintaining high uptime and reliability in production.
+
+Using higher-level controllers like Deployments or ReplicaSets ensures automatic recovery and reliability, making them essential for production environments.
+## Replica Sets
+A ReplicaSet in Kubernetes ensures a specified number of pod replicas are running at any given time. It maintains the desired number of identical pods, replacing any that fail or are deleted, to ensure application availability and fault tolerance.
+
+
+Naked pods lack reliability as they don't automatically restart if they fail, leading to potential downtime. Using ReplicaSets ensures high availability by maintaining the desired number of running pods and automatically replacing any failed ones.
+
+```yaml
+apiVersion: apps/v1 # Specifies the API version
+kind: ReplicaSet # Defines the kind of object, in this case, a ReplicaSet
+metadata:
+  name: nginx-replicaset # Name of the ReplicaSet
+spec:
+  replicas: 2 # Specifies the desired number of pod replicas
+  selector: # Selector to identify which pods the ReplicaSet is responsible for
+    matchLabels:
+      app: nginx # Pods with this label will be managed by this ReplicaSet
+  template: # Template for the pods that will be created
+    metadata:
+      labels: # Labels assigned to the pods created by this ReplicaSet
+        app: nginx
+    spec:
+      containers:
+      - name: nginx-container # Name of the container within the pod
+        image: nginx # Docker image to be used for the container
+        ports:
+        - containerPort: 80 # Port on which the container will be exposed
+```
+
+### Explanation:
+
+1. **apiVersion: apps/v1**
+   - This specifies the API version used to create the ReplicaSet. `apps/v1` is a stable API version for managing ReplicaSets.
+
+2. **kind: ReplicaSet**
+   - Defines the kind of Kubernetes object being created, which is a ReplicaSet in this case.
+
+3. **metadata:**
+   - Contains metadata about the ReplicaSet, including its name.
+
+4. **spec:**
+   - Defines the specification for the ReplicaSet.
+   
+5. **replicas: 2**
+   - Specifies the desired number of pod replicas that should always be running. In this case, 2 pods.
+
+6. **selector:**
+   - A selector is used to identify which pods the ReplicaSet should manage. It matches pods with the specified labels.
+
+7. **matchLabels:**
+   - A key-value pair used to select the pods that the ReplicaSet is responsible for. Here, it matches pods with the label `app: nginx`.
+
+8. **template:**
+   - Describes the pods that will be created by this ReplicaSet.
+
+9. **metadata:**
+   - Labels that will be applied to the pods created by the ReplicaSet.
+
+10. **spec:**
+    - Defines the pod specification.
+
+11. **containers:**
+    - Lists the containers that will run in the pod.
+
+12. **- name: nginx-container**
+    - The name of the container within the pod.
+
+13. **image: nginx**
+    - The Docker image to be used for the container.
+
+14. **ports:**
+    - Specifies the ports that will be exposed by the container.
+
+15. **- containerPort: 80**
+    - The port on which the container will listen.
+
+## Deployments
+A Deployment in Kubernetes manages ReplicaSets and ensures the desired number of pod replicas are running, enabling automated updates, rollbacks, and scaling for applications.
+
+Deployments manage replica sets and replica sets manage pods and pods manage containers.
+
+![Deployments](./images/deployament.png)
