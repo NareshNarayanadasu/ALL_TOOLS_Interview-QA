@@ -309,3 +309,82 @@ This Deployment configuration ensures that six replicas of the `nginx` container
 ```bash
 kubectl rollout status deployment [deployment name]
 ```
+
+# services
+Kubernetes Services provide a stable front-end to access pods, acting like a load balancer that automatically knows which pods to target. Since pods can be dynamically created and destroyed, Services offer a consistent way to access them via a single address. Services use label selectors to identify which pods to route traffic to, based on labels (key-value pairs) assigned to the pods. This ensures that even if the pod addresses change, the Service can still route traffic to the correctly labeled pods.
+
+## services works like this 
+
+
+![services example ](./images/services.png)
+
+
+Kubernetes Services route traffic to specific pods using labels. If a pod has a different label, it requires a separate service. Multi-tier applications (like web, app, and database) each need their own services for communication consistency. The kube-proxy on each node manages traffic routing by listening for new services and opening random ports to proxy connections to the backend pods, ensuring seamless communication within the cluster.
+
+
+Let’s start off by creating a new manifest file and deploying it to our Kubernetes cluster. The
+file is below and has two objects, Deployment & Service within the same file.
+
+```yml
+apiVersion: apps/v1 # version of the API to use
+kind: Deployment # What kind of object we're deploying
+metadata: # Information about the object
+  name: nginx-deployment # Name of the deployment
+  labels: # Labels for the deployment
+    app: nginx
+spec: # Specifications for the deployment
+  replicas: 2 # The number of pods that should always be running
+  selector: # Which pods the deployment should be responsible for
+    matchLabels:
+      app: nginx # Any pods with labels matching this will be managed
+  template: # The pod template that gets deployed
+    metadata:
+      labels: # Labels for the pods created
+        app: nginx
+    spec:
+      containers:
+      - name: nginx-container # The name of the container within the pod
+        image: nginx # Which container image should be pulled
+        ports:
+        - containerPort: 80 # The port of the container within the pod
+---
+apiVersion: v1 # Version of the API to use
+kind: Service # What kind of object we're deploying
+metadata: # Information about the service
+  name: ingress-nginx # Name of the service
+spec: # Specifications for the service
+  type: NodePort # Type of the service
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+    nodePort: 30001
+    protocol: TCP
+  selector: # Labels for selecting the pods
+    app: nginx
+```
+
+
+
+
+
+Let's focus on our Kubernetes setup. We've configured a Service called `ingress-nginx` in our manifest file. Another Service exists for managing the cluster, which we'll set aside for now. Note the ports column in the `ingress-nginx` service: it shows `80:30001/TCP`. This detail will be explored in depth later, but for now, understand that the port number after the colon `:` (30001) is crucial—it's the port through which we'll access this service from our local machine.
+
+Now, let's put our setup to the test. Open a web browser and enter the IP address of one of our Kubernetes nodes followed by `:30001` (e.g., `http://<node_ip>:30001`). This should display an nginx web page if everything is configured correctly.
+
+This test helps verify that our ingress-nginx service is accessible externally on port 30001 as intended.
+
+
+
+
+As we've progressed through this series, we've encountered a potential challenge. While Deployments allow us to roll out new pods for upgrades and replica sets can replace pods that fail, each pod gets assigned a different IP address. Up to now, we haven't needed to access these pods directly. However, you can imagine the inconvenience of having to look up and manage IP addresses every time a pod is replaced.
+
+This is where Kubernetes Services come into play. In our upcoming post, we'll delve into how Services solve this issue by providing a stable endpoint to access pods, regardless of their dynamic IP addresses. By the end of the next installment, we'll finally demonstrate how to access one of our pods using this method.
+
+Stay tuned as we explore Kubernetes Services and their role in simplifying pod access in our cluster.
+
+## Endpoints
+Endpoints in Kubernetes refer to the actual IP addresses and ports of individual pods that a Service routes traffic to. When a Service is created, it dynamically discovers pods that match its label selector and then creates Endpoints to those pods. These Endpoints are automatically updated as pods are added or removed from the cluster, ensuring that the Service always directs traffic to the correct set of pods.
+
+In essence, Endpoints represent the network addresses (IP and port combinations) of the backend pods that a Service is responsible for load balancing and exposing externally. They provide the bridge between the abstracted view presented by the Service and the actual running instances of pods within the Kubernetes cluster.
+
