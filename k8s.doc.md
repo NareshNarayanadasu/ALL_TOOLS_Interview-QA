@@ -388,3 +388,62 @@ Endpoints in Kubernetes refer to the actual IP addresses and ports of individual
 
 In essence, Endpoints represent the network addresses (IP and port combinations) of the backend pods that a Service is responsible for load balancing and exposing externally. They provide the bridge between the abstracted view presented by the Service and the actual running instances of pods within the Kubernetes cluster.
 
+############### *** how about if we manually assign endpoints *** ###################
+
+You can see that the IP addresses associated with the pods matches the endpoints. So we
+proved that the endpoints are matching under the hood.
+How about if we want to manually edit our endpoints if we don’t have a selector? Maybe
+we’re trying to have a resource to access an external service that doesn’t live within our
+Kubernetes cluster? We could create our own endpoint to do this for us. A great example
+might be an external database service for our web or app containers.
+
+```yml
+kind: "Service"
+apiVersion: "v1"
+metadata:
+name: "external-web"
+spec:
+ports:
+-
+name: "apache"
+protocol: "TCP"
+port: 80
+targetPort: 80---
+kind: "Endpoints"
+apiVersion: "v1"
+metadata:
+name: "external-web"
+subsets:
+-
+addresses:
+-
+ip: "10.10.50.53" #The IP Address of the external web server
+ports:
+-
+port: 80
+name: "apache"
+```
+
+
+***we’ll deploy a quick container into our cluster
+so we can use it to curl our web page as a test. We’ll use the imperative commands instead
+of a manifest file this time***
+
+```bash
+kubectl create -f https://k8s.io/examples/application/shell-demo.yaml #for getting a shell to run curl command  and know how it works  
+```
+To enter in to shell 
+
+  ```bash
+  kubectl exec -it shell-demo -- /bin/bash
+  ```
+
+  install curl and check whether endpoints are working or not from the kubernets pod
+
+  ```bash
+apt-get update
+apt-get install curl
+curl external-web
+```
+The curl command worked when performing a request against the “external-web” service,
+so we know it’s working!
