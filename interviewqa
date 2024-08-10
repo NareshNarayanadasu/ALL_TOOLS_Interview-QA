@@ -1,0 +1,196 @@
+### Docker
+- **How do you build a Docker image and what are some best practices for creating efficient Dockerfiles?**  
+  Use `docker build -t <image_name> .` and best practices include minimizing layers, leveraging cache, and optimizing the image size.
+
+- **What is the difference between a Docker container and a Docker image?**  
+  A Docker image is a static blueprint, while a container is a running instance of that image.
+
+- **How do you manage Docker containers' networking and storage?**  
+  Use Docker network commands for networking and volume mounts for storage.
+
+- **Explain how Docker Compose helps in managing multi-container applications.**  
+  Docker Compose uses a YAML file to define and run multi-container Docker applications.
+
+### Kubernetes
+- **What is the role of a Kubernetes pod, and how does it differ from a container?**  
+  A pod is the smallest deployable unit in Kubernetes, which can contain one or more containers.
+
+- **How do you perform a rolling update in Kubernetes?**  
+  Use `kubectl rollout restart deployment <deployment_name>`.
+
+- **What are Kubernetes Services, and how do they facilitate communication between pods?**  
+  Services provide a stable IP and DNS name for accessing pods and load balancing.
+
+- **Can you explain the concept of Kubernetes namespaces and their use cases?**  
+  Namespaces provide logical separation within a cluster to manage resources and access control.
+
+### Jenkins
+- **How do you configure a Jenkins pipeline to automate build and deployment processes?**  
+  Define stages and steps in a `Jenkinsfile` using either Declarative or Scripted syntax.
+
+- **What are the differences between Declarative and Scripted Jenkins pipelines?**  
+  Declarative is simpler and YAML-based, while Scripted is more flexible and Groovy-based.
+
+- **How do you integrate Jenkins with Git for version control?**  
+  Use the Git plugin to connect Jenkins jobs to Git repositories.
+
+- **How do you use Jenkins to deploy applications to Kubernetes?**  
+  Use the Kubernetes plugin or `kubectl` commands in Jenkins pipelines.
+
+### Terraform
+- **How do you manage multiple environments (e.g., development, staging, production) using Terraform?**  
+  Use workspaces or separate state files for each environment.
+
+- **Can you explain how Terraform modules work and how you use them in your infrastructure setup?**  
+  Modules are reusable configurations; include them using `module` blocks in your Terraform scripts.
+
+- **What are Terraform state files, and why are they important?**  
+  State files keep track of your resources' current state and are crucial for maintaining consistency.
+
+- **How do you handle Terraform configuration for a multi-cloud environment?**  
+  Use multiple provider blocks and manage resources accordingly.
+
+### Ansible
+- **How do you use Ansible playbooks for automating server configuration?**  
+  Write YAML files that define tasks and roles to configure servers.
+
+- **What is the role of Ansible roles, and how do they help in organizing your playbooks?**  
+  Roles provide a way to organize tasks, variables, and handlers into reusable components.
+
+- **How do you manage variables in Ansible, and what are some best practices?**  
+  Use variable files, environment variables, or inline definitions and keep them organized and scoped properly.
+
+- **Can you explain how Ansible integrates with other tools in a CI/CD pipeline?**  
+  Ansible can be triggered from CI/CD tools for deployment and configuration tasks.
+
+### Git
+- **How do you resolve conflicts during a Git merge?**  
+  Edit conflicting files, then commit the resolved changes.
+
+- **What is Git rebase, and how does it differ from Git merge?**  
+  Rebase rewrites commit history for a cleaner project history, while merge combines branches.
+
+- **How do you use Git tags in your release management process?**  
+  Use tags to mark specific points in the commit history, typically for releases.
+
+- **Explain how you handle large files in a Git repository.**  
+  Use Git LFS (Large File Storage) to manage large files.
+
+### Prometheus
+- **How does Prometheus collect and store metrics, and what is its data model?**  
+  Prometheus uses a pull model and time-series data model for collecting and storing metrics.
+
+- **What is the purpose of Prometheus exporters, and how do you use them?**  
+  Exporters expose metrics from services and applications for Prometheus to scrape.
+
+- **How do you write a Prometheus query to extract specific metrics?**  
+  Use PromQL (Prometheus Query Language) to write queries.
+
+- **How do you set up alerts in Prometheus?**  
+  Define alerting rules in configuration files and set up Alertmanager for notifications.
+
+### Grafana
+- **How do you create and configure dashboards in Grafana?**  
+  Use the Grafana UI to add panels and configure queries from data sources.
+
+- **What data sources can Grafana integrate with, and how do you connect them?**  
+  Grafana integrates with various sources like Prometheus, InfluxDB, and Elasticsearch; connect via data source settings.
+
+- **How do you use Grafana to visualize time-series data from Prometheus?**  
+  Create dashboards and panels using PromQL queries to visualize time-series data.
+
+- **Explain how you configure alerting in Grafana.**  
+  Set up alert rules in panels and configure notifications in the alerting section.
+
+### ELK Stack (Elasticsearch, Logstash, Kibana)
+- **How does Elasticsearch handle indexing and searching of log data?**  
+  Elasticsearch indexes log data into documents and allows fast searches with its query language.
+
+- **What is the role of Logstash in the ELK stack, and how do you configure it for data ingestion?**  
+  Logstash processes and ingests log data from various sources into Elasticsearch.
+
+- **How do you use Kibana to create visualizations and dashboards from log data?**  
+  Use Kibana to create visualizations and dashboards based on Elasticsearch queries.
+
+- **How do you handle scaling and performance issues with Elasticsearch?**  
+  Scale Elasticsearch by adding nodes and optimizing index settings and queries.
+
+### HashiCorp Vault
+- **How does HashiCorp Vault manage secrets and what are its primary components?**  
+  Vault manages secrets through dynamic secrets, encryption, and access policies; key components are the Vault server and clients.
+
+- **Explain how you configure access policies in HashiCorp Vault.**  
+  Define policies in HCL or JSON that control access to secrets and operations.
+
+- **How do you integrate HashiCorp Vault with a CI/CD pipeline for secret management?**  
+  Use Vault's API or plugins to retrieve secrets within pipeline scripts or tools.
+
+- **What are some best practices for securing and managing Vault?**  
+  Use strong authentication methods, enable auditing, and regularly rotate secrets.
+
+### SonarQube
+- **How do you set up SonarQube for analyzing code quality and security?**  
+  Install and configure SonarQube server, set up projects, and integrate with build tools.
+
+- **What types of issues can SonarQube detect in your codebase?**  
+  SonarQube detects bugs, code smells, and security vulnerabilities.
+
+- **How do you integrate SonarQube with Jenkins or other CI/CD tools?**  
+  Use the SonarQube plugin for Jenkins to analyze code during the build process.
+
+- **Can you explain how SonarQube's quality gates work?**  
+  Quality gates define criteria for code quality, and projects must meet these criteria to pass.
+
+### Snyk
+- **How does Snyk scan for vulnerabilities in container images and application dependencies?**  
+  Snyk scans images and dependencies for known vulnerabilities and provides remediation advice.
+
+- **What are the steps to integrate Snyk with a Jenkins pipeline?**  
+  Install the Snyk plugin, configure the Snyk API token, and add Snyk steps to the Jenkins pipeline.
+
+- **How do you handle vulnerabilities identified by Snyk in your applications?**  
+  Review the findings, prioritize fixes, and update dependencies or configuration as necessary.
+
+- **Explain how Snyk's automated fixes work.**  
+  Snyk suggests and sometimes automatically applies fixes for known vulnerabilities.
+
+### Helm
+- **What is Helm, and how does it simplify Kubernetes application management?**  
+  Helm is a package manager for Kubernetes that simplifies application deployment with reusable charts.
+
+- **How do you create and use Helm charts for deploying applications?**  
+  Define charts with YAML templates and use `helm install` to deploy.
+
+- **Can you explain how Helm manages configurations and values for deployments?**  
+  Helm uses values files to customize configuration settings for deployments.
+
+- **What are Helm repositories, and how do you use them?**  
+  Repositories store and distribute Helm charts; use `helm repo add` to add and `helm search` to find charts.
+
+### Nginx
+- **How do you configure Nginx as a reverse proxy for an application?**  
+  Define `proxy_pass` directives in the Nginx configuration to forward requests to backend servers.
+
+- **What are the benefits of using Nginx for load balancing?**  
+  Nginx provides high performance, scalability, and efficient load distribution across servers.
+
+- **How do you secure Nginx with SSL/TLS certificates?**  
+  Configure SSL/TLS using `ssl_certificate` and `ssl_certificate_key` directives in the Nginx configuration.
+
+- **Explain how Nginx handles request routing and URL rewriting.**  
+  Use `location` blocks for routing and `rewrite` directives for URL manipulation.
+
+### JIRA
+- **How do you use JIRA for tracking and managing development tasks?**  
+  Create issues, track progress, and manage workflows using JIRA’s task and project management
+
+ features.
+
+- **What are some best practices for configuring JIRA workflows?**  
+  Define clear stages, use transitions to reflect process changes, and customize workflows to match project needs.
+
+- **How do you integrate JIRA with other DevOps tools?**  
+  Use integrations and plugins to connect JIRA with CI/CD tools, version control systems, and communication platforms.
+
+- **Can you explain how JIRA's reporting and dashboards help in project management?**  
+  JIRA reports and dashboards provide insights into project status, progress, and team performance.
