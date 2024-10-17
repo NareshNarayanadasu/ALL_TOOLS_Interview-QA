@@ -10,21 +10,6 @@ In my previous roles, I’ve successfully contributed to the deployment and opti
 
 ---
 
-This introduction gives the interviewer a clear snapshot of your technical expertise and experience, while setting a positive tone for the conversation.
----
-When explaining your previous projects in an interview, you want to focus on your specific role, the technologies you used, and the impact or outcomes of your work. Here's a structure you can follow for each project:
-
-1. **Brief Overview of the Project**: Start with a one or two-sentence summary of the project, including the company, project name, and its purpose or objective.
-   
-2. **Your Role and Responsibilities**: Explain your specific role on the project, focusing on the tasks you were directly responsible for.
-
-3. **Technologies Used**: Mention the tools, technologies, and methodologies you applied, linking them to the job you're applying for.
-
-4. **Challenges and Solutions**: Talk about any challenges you faced and how you addressed them, demonstrating problem-solving skills.
-
-5. **Outcome/Impact**: Conclude with the results of your contributions—whether you improved efficiency, reduced costs, sped up processes, or increased system stability.
-
-Here’s how you can explain each of your previous projects based on your experience:
 
 ### **Project 1: ORION Project**
 
