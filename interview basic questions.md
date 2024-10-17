@@ -2,8 +2,6 @@
 
 **intro**
 ---
-When introducing yourself in an interview, you want to give a concise, professional overview of your skills and experience, tailored to the role you're applying for. Here's a sample introduction based on your profile:
-
 ---
 
 "Good [morning/afternoon], my name is Naresh Narayanadasu, and I have over three years of experience as a DevOps Engineer, specializing in AWS and Azure environments. Throughout my career, I’ve worked extensively on automating deployments, containerization using Docker and Kubernetes, and managing CI/CD pipelines with Jenkins and Azure DevOps. I’m also skilled in managing infrastructure as code using tools like Terraform, CloudFormation, and Ansible, ensuring efficient and scalable cloud solutions.
