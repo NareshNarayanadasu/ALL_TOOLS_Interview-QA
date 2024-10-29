@@ -1,18 +1,17 @@
-name: Docker Image CI
+name: Java CI with Docker
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Build the Docker image
-      run: docker build . --file ~/sample_java_proj_emart/ --tag my-image-name:$(date +%s)
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Build Docker image
+        run: docker build . --file ./sample_java_proj_emart/Dockerfile --tag my-image-name:$(date +%s)
