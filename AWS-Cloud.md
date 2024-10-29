@@ -304,4 +304,4 @@ Certainly! Here's how I would answer these questions:
 38. **Scenario:** Describe a time when you had to collaborate with a team to deliver an AWS project. How did you ensure effective communication and coordination?
     - **Answer:** Collaborated on migrating a monolithic application to microservices architecture using AWS ECS. Conducted regular stand-ups for progress updates, utilized project management tools like JIRA for task tracking, and organized workshops for knowledge sharing. Communicated project milestones and challenges transparently to ensure alignment and coordination among team members.
 
-
+hello
